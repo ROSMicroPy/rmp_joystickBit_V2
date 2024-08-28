@@ -4,9 +4,9 @@
     ["rostype/Vector3.py", "github:rosmicropy/rmp_joystickBit_V2/rostype/Vector3.py"],
     ["rostype/Attachment.py", "github:rosmicropy/rmp_joystickBit_V2/rostype/Attachment.py"],
     ["RosBot_Teleop.py", "github:rosmicropy/rmp_joystickBit_V2/RosBot_Teleop.py"],
-    ["mbits/lib/joystickBit.py", "github:rosmicropy/rmp_joystickBit_V2/mbits/lib/joystickBit.py"]
+    ["mbits/lib/joystickBit.py", "github:rosmicropy/rmp_joystickBit_V2/mbits/lib/JoystickBit.py"]
 
 
   ],
-  "version": "0.4"
+  "version": "0.6"
 }
