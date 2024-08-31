@@ -1,5 +1,6 @@
 import gc
 import time
+import wifi
 
 from ROSMicroPy import registerDataType, dumpDataType, registerEventSubscription
 from ROSMicroPy import run_ROS_Stack, init_ROS_Stack, registerROSPublisher, publishMsg
