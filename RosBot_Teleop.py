@@ -122,7 +122,9 @@ def onJoystick_Y(val:int) -> None:
     if( rosInit and not rosDebug): publishMsg(pubCmdVel, mesg);
 
 
-if (not rosDebug): 
+if (not rosDebug):
+    setNodeName("JoystickController")
+
     print("\r\nInit ROS Stack\r\n")
     init_ROS_Stack()
 
@@ -135,8 +137,8 @@ if (not rosDebug):
     dumpDataType(typeAttach)
     
     print("Registgering Event Publishers\r\n")
-    pubCmdVel = registerROSPublisher("turtle1/cmd_vel", typeTwist)
-    pubAttach = registerROSPublisher("turtle1/attachment", typeAttach)
+    pubCmdVel = registerROSPublisher("JoystickController/cmd_vel", typeTwist)
+    pubAttach = registerROSPublisher("JoystickController/attachment", typeAttach)
 
     print("Run ROS Stack\r\n")
     run_ROS_Stack()
